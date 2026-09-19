@@ -4,6 +4,11 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    watch: {
+      ignored: ['**/api/**', '**/public/Images/**', '**/public/music/**'],
+    },
+  },
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })

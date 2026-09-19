@@ -1,4 +1,9 @@
-# React + Vite
+# Site de casamento
+
+O site é construído com React e Vite. A API de gerenciamento de confirmações
+de presença e presentes fica em [api/](./api/). Consulte o
+[README da API](./api/README.md) para executar o backend e conhecer os
+endpoints disponíveis.
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
