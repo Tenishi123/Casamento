@@ -3,15 +3,15 @@ import babel from '@rolldown/plugin-babel'
 import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/Casamento/',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/Casamento/' : '/',
   server: {
     watch: {
-      ignored: ['**/api/**', '**/public/Images/**', '**/public/music/**'],
+      ignored: ['**/.vs/**', '**/api/**', '**/public/Images/**', '**/public/music/**'],
     },
   },
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-})
+}))
