@@ -2,28 +2,29 @@ import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
 const API_BASE_URL = 'http://3.144.129.155'
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 const photos = [
   {
-    src: '/Images/isabelle-julio-retrato.jpeg',
+    src: publicAsset('Images/isabelle-julio-retrato.jpeg'),
     alt: 'Isabelle e Julio sorrindo juntos',
     className: 'photo-main',
   },
   {
-    src: '/Images/isabelle-julio-beijo.jpg',
+    src: publicAsset('Images/isabelle-julio-beijo.jpg'),
     alt: 'Julio beijando Isabelle',
     className: 'photo-secondary',
   },
   {
-    src: '/Images/isabelle-julio-casal.jpg',
+    src: publicAsset('Images/isabelle-julio-casal.jpg'),
     alt: 'Isabelle e Julio juntos',
     className: 'photo-secondary photo-landscape',
   },
 ]
 
 const tracks = [
-  { title: 'Those Eyes (Home Session)', artist: 'New West', time: '3:40', src: '/music/those-eyes-new-west.mp4' },
-  { title: 'I Hear a Symphony (Lyrics)', artist: 'Cody Fry', time: '3:07', src: '/music/i-hear-a-symphony-cody-fry.mp4' },
+  { title: 'Those Eyes (Home Session)', artist: 'New West', time: '3:40', src: publicAsset('music/those-eyes-new-west.mp4') },
+  { title: 'I Hear a Symphony (Lyrics)', artist: 'Cody Fry', time: '3:07', src: publicAsset('music/i-hear-a-symphony-cody-fry.mp4') },
 ]
 
 function App() {
@@ -207,7 +208,7 @@ function App() {
           <a className="button button-dark" href="#rsvp">Venha celebrar com a gente <span>↗</span></a>
         </div>
         <div className="hero-portrait">
-          <img src="/Images/451ddad2-1796-44f7-aba3-ac224ab55a8f.png" alt="Isabelle e Julio abraçados" />
+          <img src={publicAsset('Images/451ddad2-1796-44f7-aba3-ac224ab55a8f.png')} alt="Isabelle e Julio abraçados" />
           <div className="hero-stamp" aria-hidden="true"><span>com<br />amor</span><b>✳</b></div>
         </div>
         <div className="scroll-note"><span className="scroll-line" /> role para descobrir</div>
