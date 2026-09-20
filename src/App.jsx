@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
-const API_BASE_URL = 'http://3.141.194.0'
+const API_BASE_URL = 'https://3.23.223.188'
 const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 const photos = [

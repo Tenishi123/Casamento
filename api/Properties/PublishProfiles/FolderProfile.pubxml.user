@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
-<Project>
-  <PropertyGroup>
-    <_PublishTargetUrl>E:\casamento\api\bin\Release\net10.0\publish\</_PublishTargetUrl>
-    <History>True|2026-09-20T02:34:15.4886692Z||;True|2026-09-19T23:33:48.4094504-03:00||;True|2026-09-19T23:24:49.8311442-03:00||;True|2026-09-19T22:59:08.5107144-03:00||;True|2026-09-19T22:05:37.1455383-03:00||;True|2026-09-19T21:50:44.5151264-03:00||;True|2026-09-19T21:40:09.8393669-03:00||;True|2026-09-19T21:39:38.4797210-03:00||;</History>
-    <LastFailureDetails />
-  </PropertyGroup>
-</Project>
