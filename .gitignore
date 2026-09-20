@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+api/bin
+api/obj
+api/*.db
+api/*.db-*
 
 # Editor directories and files
 .vscode/*
